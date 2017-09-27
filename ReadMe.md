@@ -30,74 +30,74 @@ Challenges within each section are meant to be solved in order.
 ### Navigation
 
 1.  Print the path of your working directory
-        - pwd
+        $ pwd
 1.  List the files in your working directory
-        - ls
+        $ ls
 1.  List the files with a particular extension, like `.txt`
-         - .txt
+         $ ls *.txt
 1.  List the files in a subdirectory, like `project`
 
 1.  Navigate to a subdirectory, like `project`
 1.  Navigate to the parent directory of your working directory
-        -  cd <name of directory>
+        $ cd <name of directory>
 1.  Navigate to a nested subdirectory, like `path/to/project`
-        - cd ../ ../
+        $ cd ../ ../
 1.  Navigate to your home directory
-        - ~
+        $ ~/
 1.  Navigate back to the previous directory
-        - cd -
+        $ cd -
 ### Variables
 
 1.  Print a sentence, like `Hello world`
-        - say Hello World
+        $say Hello World
 1.  Print a variable value, like `$USER` or `$PATH`
-        - printenv
+        $printenv
 1.  Set a variable `NAME` equal to your first name, then print its value
-        - declare [Elliot Oliveira] [-p]
-        -printf
+        $declare [Elliot Oliveira] [-p]
+        $printf
 1.  Set a variable `FULL_NAME` equal to your full name, then print its value
-- declare [`FULL_NAME`] [-p] [Elliot Oliveira]
--printtf
+    $declare [`FULL_NAME`] [-p] [Elliot Oliveira]
+    $printtf
 1.  Print all environment variables (names and values)
-    -printenv
+    $printenv
 1.  Make an alias named `hello` that prints `Hello world`
-    - alias [-a] [hello]
-    -  wc [-clmw] [alias]
+    $alias [-a] [hello]
+    $wc [-clmw] [alias]
 1.  Make an alias named `gocode` that navigates to your code directory
-     -alias [-a] [gocode]
-     - cd gocode
+     $alias [-a] [gocode]
+     $cd gocode
 1.  Print all aliases (names and values)
-        -alias ls="ls -C"
+        $alias ls="ls -C"
 ### Getting Help
 
 1.  Print what options a command accepts, like `bash` or `python`
-        - whatis
+        $ whatis
 1.  Read the manual for a command, like `echo` or `ls`
-        - man
+        $ man
 1.  Print the file path to a command, like `bash` or `python`
         -
 ### Files
 
 1.  Navigate to the directory `Animals`
-        - cd Animals
+        $cd Animals
 1.  Print the contents of the file `Cats.txt`
-        - wc Cats.txt
+        $ wc Cats.txt
 1.  Print the contents of both files `Cats.txt` and `Dogs.txt`
-    - pr Cats.txt
-    -pr Dogs.txt
+    $pr Cats.txt
+    $pr Dogs.txt
 1.  Count the words in the file `Cats.txt`
-    - cw Cats.txt
+     $ cw Cats.txt
 1.  Count the words in all files with the extension `.txt`
-     - cw/*.txt
+     $ cw/*.txt
 1.  Copy the file `Dogs.txt` to a new file `BabyDogs.txt`
-        -cp Dogs.txt Baby  Dogs.txt
+        $ cp Dogs.txt Baby  Dogs.txt
 1.  Rename the file `BabyDogs.txt` to `Puppies.txt`
-        -mv BabyDogs.txt "Puppies.txt"
+        $ mv BabyDogs.txt "Puppies.txt"
 1.  Make a new directory named `Shelter` inside `Animals
-        -mkdir Shelter
-        -mv Shelter ~/Animals
+        $ mkdir Shelter
+        $ mv Shelter ~/Animals
 1.  Move the file `Puppies.txt` into the directory `Shelter
-        -mv Puppies.txt ~/Shelter`
+        $ mv Puppies.txt ~/Shelter`
 1.  Copy the file `Cats.txt` to `Kittens.txt` inside `Shelter`
         $ cp Cats.txt ~/Shelter/Cats.txt
 1.  List the files within the directory `Shelter`
@@ -115,11 +115,21 @@ Challenges within each section are meant to be solved in order.
 ### Permissions
 
 1.  Print out your user name
+        $whoami
 1.  List the permissions (and metadata) of all `.txt` files
+        $ls -1R  *.txt
 1.  Give all users write permission on the file `Cats.txt`
+    $ chmod a+r file
 1.  List the permissions (and metadata) of the file `Cats.txt`
+    $  -l Cats.txt
 1.  Change the owner of the file `Cats.txt` to another user
+    $ sudo chown <username> /Users/Shared/Shelter/Cats.txt
 1.  Now list the permissions (and owner) of the file `Cats.txt`
+    $ ls -l Cats.txt
 1.  Try to change the owner of the file `Cats.txt` back to yourself
+    $sudo chown -R $USER ~$USER
 1.  Invoke the super-user to make the previous command succeed
+    $chmod a-x
 1.  List the permissions (and owner) of the file `Cats.txt` again
+    $ls -l Cats.tx
+
