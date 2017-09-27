@@ -59,7 +59,10 @@ Challenges within each section are meant to be solved in order.
 - declare [`FULL_NAME`] [-p] [Elliot Oliveira]
 -printtf
 1.  Print all environment variables (names and values)
+    -printenv
 1.  Make an alias named `hello` that prints `Hello world`
+    - alias [-a] [hello]
+    -  wc [-clmw] [alias]
 1.  Make an alias named `gocode` that navigates to your code directory
 1.  Print all aliases (names and values)
 
