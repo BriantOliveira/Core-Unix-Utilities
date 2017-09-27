@@ -92,11 +92,18 @@ Challenges within each section are meant to be solved in order.
 1.  Copy the file `Dogs.txt` to a new file `BabyDogs.txt`
         -cp Dogs.txt Baby  Dogs.txt
 1.  Rename the file `BabyDogs.txt` to `Puppies.txt`
-1.  Make a new directory named `Shelter` inside `Animals`
-1.  Move the file `Puppies.txt` into the directory `Shelter`
+        -mv BabyDogs.txt "Puppies.txt"
+1.  Make a new directory named `Shelter` inside `Animals
+        -mkdir Shelter
+        -mv Shelter ~/Animals
+1.  Move the file `Puppies.txt` into the directory `Shelter
+        -mv Puppies.txt ~/Shelter`
 1.  Copy the file `Cats.txt` to `Kittens.txt` inside `Shelter`
+        $ cp Cats.txt ~/Shelter/Cats.txt
 1.  List the files within the directory `Shelter`
+        $ ls -d ~/Shelter
 1.  Count the words in all `.txt` files inside `Shelter`
+        $cw /*.txt/~/Shelter
 1.  Try to remove the directory `Shelter` (this should fail)
 1.  Remove all `.txt` files inside `Shelter`
 1.  Remove the directory `Shelter` (this should succeed)
