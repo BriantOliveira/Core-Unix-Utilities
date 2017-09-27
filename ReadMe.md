@@ -56,6 +56,8 @@ Challenges within each section are meant to be solved in order.
         - declare [Elliot Oliveira] [-p]
         -printf
 1.  Set a variable `FULL_NAME` equal to your full name, then print its value
+- declare [`FULL_NAME`] [-p] [Elliot Oliveira]
+-printtf
 1.  Print all environment variables (names and values)
 1.  Make an alias named `hello` that prints `Hello world`
 1.  Make an alias named `gocode` that navigates to your code directory
