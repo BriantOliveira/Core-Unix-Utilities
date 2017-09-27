@@ -105,8 +105,11 @@ Challenges within each section are meant to be solved in order.
 1.  Count the words in all `.txt` files inside `Shelter`
         $cw /*.txt/~/Shelter
 1.  Try to remove the directory `Shelter` (this should fail)
-1.  Remove all `.txt` files inside `Shelter`
+        $ rm -rf ~/Shelter
+1.  Remove all `.txt` files inside `Shelter
+        $ rm /*.txt/Shelter`
 1.  Remove the directory `Shelter` (this should succeed)
+        $ rm -d  ~/Shelter
 1.  Now cry because you just deleted those poor tiny animals
 
 ### Permissions
