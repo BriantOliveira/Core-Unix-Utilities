@@ -86,8 +86,11 @@ Challenges within each section are meant to be solved in order.
     - pr Cats.txt
     -pr Dogs.txt
 1.  Count the words in the file `Cats.txt`
+    - cw Cats.txt
 1.  Count the words in all files with the extension `.txt`
+     - cw/*.txt
 1.  Copy the file `Dogs.txt` to a new file `BabyDogs.txt`
+        -cp Dogs.txt Baby  Dogs.txt
 1.  Rename the file `BabyDogs.txt` to `Puppies.txt`
 1.  Make a new directory named `Shelter` inside `Animals`
 1.  Move the file `Puppies.txt` into the directory `Shelter`
