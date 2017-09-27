@@ -53,7 +53,8 @@ Challenges within each section are meant to be solved in order.
 1.  Print a variable value, like `$USER` or `$PATH`
         - printenv
 1.  Set a variable `NAME` equal to your first name, then print its value
-
+        - declare [Elliot Oliveira] [-p]
+        -printf
 1.  Set a variable `FULL_NAME` equal to your full name, then print its value
 1.  Print all environment variables (names and values)
 1.  Make an alias named `hello` that prints `Hello world`
