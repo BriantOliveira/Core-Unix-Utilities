@@ -64,8 +64,10 @@ Challenges within each section are meant to be solved in order.
     - alias [-a] [hello]
     -  wc [-clmw] [alias]
 1.  Make an alias named `gocode` that navigates to your code directory
+     -alias [-a] [gocode]
+     - cd gocode
 1.  Print all aliases (names and values)
-
+        -alias ls="ls -C"
 ### Getting Help
 
 1.  Print what options a command accepts, like `bash` or `python`
